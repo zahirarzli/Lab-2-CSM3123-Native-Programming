@@ -10,20 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LayoutExploration"
+        android:theme="@style/Theme.ControlExperiment"
         tools:targetApi="31">
-        <activity
-            android:name=".GridLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ConstraintLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RelativeLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LinearLayoutActivity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
