@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridLayoutActivity">
+
+    <!-- TextView for "This is Grid Layout" -->
+    <TextView
+        android:id="@+id/gridLayoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Grid Layout"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+    <!-- GridLayout for ImageButtons -->
+    <GridLayout
+        android:id="@+id/GridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        app:layout_constraintTop_toBottomOf="@id/gridLayoutText"
+        android:padding="16dp">
+
+        <!-- ImageButtons -->
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/scene1" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/scene2" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/scene3" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/scene4" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/scene5" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/scene6" />
+    </GridLayout>
+
+    <!-- Go Back Button below the ImageButtons -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:onClick="finish"
+        app:layout_constraintTop_toBottomOf="@id/GridLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

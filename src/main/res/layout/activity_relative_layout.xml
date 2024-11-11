@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- TextView for the title -->
+        <TextView
+            android:id="@+id/relativeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is Relative Layout"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Button to go back -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back"
+            android:onClick="finish"
+            android:layout_below="@id/relativeText"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Button on Top Left -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Left Button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <!-- Button on Top Right -->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Right Button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <!-- Button on Bottom Left -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Left Button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+        <!-- Button on Bottom Right -->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Right Button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+        <!-- Button in the middle -->
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Middle Button"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
